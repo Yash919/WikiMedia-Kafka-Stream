@@ -20,6 +20,17 @@ WikiMedia-Kafka is a Spring Boot application designed to produce and consume rea
 - Producer Start: The producer automatically streams data from Wikimedia.
 - Consumer Listener: Listens to Kafka topics and persists data to the database.
 
+## Data Persistence
+- All consumed Wikimedia event data is stored in a MySQL database.
+
+#### **MySQL Table: wiki_media**
+
+| Column Name     | Type                   | Description                                       |
+| :---:           | :---:                  | :---:                                             |
+| id              | BIGINT (Primary Key)   | Auto-generated unique identifier.                 |
+| wiki_event_data | TEXT                   | JSON or raw string data of the Wikimedia event.   |
+
+
 ## Run Kafka ( Default port number: 9092 )
 - Start Zookeeper: Open a terminal and run the following command: `bin/zookeeper-server-start.sh config/zookeeper.properties` 
 - Start Kafka Server: `bin/kafka-server-start.sh config/server.properties`
