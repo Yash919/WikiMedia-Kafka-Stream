@@ -36,5 +36,17 @@ WikiMedia-Kafka is a Spring Boot application designed to produce and consume rea
 - Start Kafka Server: `bin/kafka-server-start.sh config/server.properties`
 - Consume message: `bin/kafka-console-consumer.sh --topic {topic-name} --from-beginning --bootstrap-server localhost:9092`
 
+## ScreenShots: 
+#### Producing Wikimedia Event Data
+<img width="1398" alt="image" src="https://github.com/user-attachments/assets/6d01ed30-8722-4db5-a73b-bcf4aae6dd95">
+
+#### Consuming Wikimedia Event Data
+<img width="1361" alt="image" src="https://github.com/user-attachments/assets/3a94696b-4180-481c-a409-a5a0e56ce409">
+
+#### Storing Event Data in MySQL
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/987edb70-956d-4f63-a659-fa28546d142c">
+
+
+
 # Credits
 **This project was created by Yash Mehta 🚀**
